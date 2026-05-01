@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend-ai:
+    build: 
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "5000:5000"
+    container_name: ruhuna_hoops_backend
+
+  frontend-ui:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: ruhuna_hoops_frontend
+    depends_on:
+      - backend-ai
