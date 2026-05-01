@@ -1,4 +1,4 @@
-#  Ruhuna Hoops AI Predictor (Science Faculty)
+#  Ruhuna Hoops AI Predictor
 
 An end-to-end Machine Learning web application that predicts inter-faculty basketball tournament points based on team statistics.
 
